@@ -71,6 +71,12 @@ type RuleContentDirectory struct {
 	Rules  map[string]RuleContent
 }
 
+// RuleContentDirectoryV1 contains content for all available rules (of version V1) in a directory.
+type RuleContentDirectoryV1 struct {
+	Config GlobalRuleConfig
+	Rules  map[string]RuleContentV1
+}
+
 // GlobalRuleConfig represents the file that contains
 // metadata globally applicable to any/all rule content.
 type GlobalRuleConfig struct {
